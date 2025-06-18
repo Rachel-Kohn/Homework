@@ -1,0 +1,14 @@
+C:\dev\homework\49\bin\Debug\net9.0\49.exe
+C:\dev\homework\49\bin\Debug\net9.0\49.deps.json
+C:\dev\homework\49\bin\Debug\net9.0\49.runtimeconfig.json
+C:\dev\homework\49\bin\Debug\net9.0\49.dll
+C:\dev\homework\49\bin\Debug\net9.0\49.pdb
+C:\dev\homework\49\obj\Debug\net9.0\49.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\homework\49\obj\Debug\net9.0\49.AssemblyInfoInputs.cache
+C:\dev\homework\49\obj\Debug\net9.0\49.AssemblyInfo.cs
+C:\dev\homework\49\obj\Debug\net9.0\49.csproj.CoreCompileInputs.cache
+C:\dev\homework\49\obj\Debug\net9.0\49.dll
+C:\dev\homework\49\obj\Debug\net9.0\refint\49.dll
+C:\dev\homework\49\obj\Debug\net9.0\49.pdb
+C:\dev\homework\49\obj\Debug\net9.0\49.genruntimeconfig.cache
+C:\dev\homework\49\obj\Debug\net9.0\ref\49.dll
