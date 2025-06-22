@@ -14,6 +14,7 @@ header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: #D8DBE2;
+    letter-spacing: 3px;
 }
 
 header h2 {
@@ -31,8 +32,24 @@ header h2 {
     height: 200px;
     object-fit: cover;
     display: block;
+    border-radius: 0px;
 }
 
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-align: center;
+    background-color: #2F5061;
+    color: #6E8CA0;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
 .about {
     font-size: 1.75em;
     color: #C5C9D1;
@@ -42,21 +59,6 @@ header h2 {
     margin: 30px auto;
     letter-spacing: 2px;
     line-height: 1.6;
-}
-
-h3 {
-    text-align: center;
-}
-
-h3 a {
-    text-align: center;
-    background-color: #2F5061;
-    color: #D8DBE2;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
 }
 span {
     color: #203a47;
