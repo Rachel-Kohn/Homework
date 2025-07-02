@@ -1,0 +1,112 @@
+body {
+    background-color: #4A4F55;
+    color: #C5C9D1;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px auto;
+    background-attachment: fixed;
+    margin: 0;
+    /* reset default margin */
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2F5061;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #D8DBE2;
+    letter-spacing: 3px;
+}
+
+#across {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0px;
+}
+
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto 40px auto;
+    border-collapse: collapse;
+    background-color: #2F5061;
+    color: white;
+    font-size: 1em;
+    border-radius: 6px;
+}
+
+caption {
+    font-size: 2em;
+    font-style: italic;
+    color: #6E8CA0;
+    padding: 15px 0;
+    text-align: center;
+}
+
+thead th {
+    background-color: #203a47;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-bottom: 5px solid #6E8CA0;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #34536d;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2F5061;
+}
+
+td,
+th {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+tbody td:last-child {
+    font-weight: bold;
+    color: white;
+    text-align: right;
+}
+
+tfoot td {
+    text-align: center;
+    font-style: italic;
+    color: #B0B8C1;
+    padding: 10px;
+    border-top: 4px solid #6E8CA0;
+    background-color: #203a47;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2F506180;
+    color: #D8DBE2;
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 15px;
+
+}
+
+
+
+#kosher {
+    font-weight: bolder;
+    display: block;
+    margin-top: 8px;
+}
