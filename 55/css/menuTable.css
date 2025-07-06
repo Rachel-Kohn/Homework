@@ -42,6 +42,7 @@ table {
     color: white;
     font-size: 1em;
     border-radius: 6px;
+
 }
 
 caption {
@@ -87,6 +88,10 @@ tfoot td {
     padding: 10px;
     border-top: 4px solid #6E8CA0;
     background-color: #203a47;
+}
+
+tbody tr:hover td {
+    color: #203a47;
 }
 
 footer {
