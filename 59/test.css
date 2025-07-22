@@ -161,7 +161,6 @@ header h2 span {
 
     .item {
         width: 30%;
-        /* 👈 Makes three items fit side-by-side */
         text-align: center;
     }
 
