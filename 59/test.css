@@ -137,20 +137,6 @@ header h2 span {
     box-sizing: border-box;
 }
 
-
-#form {
-    background-color: lightgray;
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px 0px 20px 0px;
-    line-height: 2em;
-}
-
-#form h1 {
-    font-weight: 900;
-    font-size: 1.2em;
-}
-
 @media (min-width: 800px) {
     .items {
         flex-direction: row;
@@ -161,7 +147,6 @@ header h2 span {
 
     .item {
         width: 30%;
-        /* 👈 Makes three items fit side-by-side */
         text-align: center;
     }
 
@@ -180,6 +165,20 @@ header h2 span {
         display: block;
     }
 }
+
+#form {
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
+    line-height: 2em;
+}
+
+#form h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
 
 #form h1 {
     font-weight: 900;
