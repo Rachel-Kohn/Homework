@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+    scroll-margin-top: 52px;
+    scroll-margin-bottom: 52px;
+    font-size: large;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navBar nav {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navBar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navBar a:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header {
+    background-color: lightgray;
+    border-width: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    width: 85%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+header h1,
+header h2 {
+    font-weight: 900;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.75em;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+header h2 span {
+    font-style: italic;
+}
+
+#products {
+    padding: 20px;
+}
+
+#products h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px 10px 10px 0px;
+}
+
+#products h2 {
+    padding: 10px 10px 10px 0px;
+}
+
+.item h1 {
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+
+#products h2,
+.item h2 {
+    text-align: justify;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item img,
+.item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.items {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+#form {
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
+    line-height: 2em;
+}
+
+#form h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+@media (min-width: 800px) {
+    .items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .item {
+        width: 30%;
+        /* 👈 Makes three items fit side-by-side */
+        text-align: center;
+    }
+
+    .item h1 {
+        text-align: center;
+    }
+
+    .item h2 {
+        text-align: justify;
+    }
+
+    .item img,
+    .item video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+#form h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+#form label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+#form input {
+    width: auto;
+    border-radius: 5px;
+
+}
+
+#form button {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#financials {
+    padding: 20px;
+}
+
+#financials h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px 10px 10px 0px;
+}
+
+#financials h2 {
+    padding: 10px 10px 10px 0px;
+}
+
+#financials h3 {
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+
+
+#financials table {
+    display: table;
+    width: 50%;
+    margin: 30px auto 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: white;
+    border: 1px solid black;
+    min-width: 600px;
+}
+
+#financials table,
+#financials th,
+#financials td {
+    border: 1px solid black;
+}
+
+#financials thead th {
+    font-weight: 900;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+#financials th {
+    font-weight: 900;
+    text-align: center;
+}
+
+#financials td:first-child {
+    text-align: center;
+    font-weight: 900;
+}
+
+#financials tbody td:last-child,
+#financials tfoot td:last-child {
+    color: red;
+    text-align: right;
+}
+
+#financials td:nth-child(2),
+#financials td:nth-child(3),
+#financials td:nth-child(4),
+#financials td:nth-child(5) {
+    text-align: right;
+}
+
+#financials tr:last-child td:first-child {
+    text-align: right;
+}
+
+#financials tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+@media (max-width: 800px) {
+    #financialsScroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #financials table {
+        display: block;
+        min-width: 600px;
+        width: max-content;
+    }
+}
+
+#about h1 {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px 10px 10px 0px;
+}
+
+#about h2 {
+    padding: 10px 10px 20px 0px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    box-sizing: border-box;
+}
