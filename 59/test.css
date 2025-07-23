@@ -119,6 +119,7 @@ header h2 span {
     padding: 0;
     box-sizing: border-box;
 }
+
 .item img,
 .item video {
     width: 100%;
@@ -135,6 +136,7 @@ header h2 span {
     gap: 20px;
     box-sizing: border-box;
 }
+
 @media (min-width: 800px) {
     .items {
         display: flex;
