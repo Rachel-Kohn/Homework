@@ -119,36 +119,6 @@ header h2 span {
     padding: 0;
     box-sizing: border-box;
 }
-
-@media (min-width: 800px) {
-    .items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .item {
-        width: 30%;
-        text-align: center;
-    }
-
-    .item h1 {
-        text-align: center;
-    }
-
-    .item h2 {
-        text-align: justify;
-    }
-
-    .item img,
-    .item video {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-}
-
 .item img,
 .item video {
     width: 100%;
@@ -165,7 +135,21 @@ header h2 span {
     gap: 20px;
     box-sizing: border-box;
 }
+@media (min-width: 800px) {
+    .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
+    .item {
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+}
 
 
 #form {
