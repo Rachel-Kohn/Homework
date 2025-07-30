@@ -1,1 +1,2 @@
 - Sign me up: not on the same line when on a larger screen. 
+- Financials: did not add hover
