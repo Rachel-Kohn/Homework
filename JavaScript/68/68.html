@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Box Test</title>
+</head>
+
+<body>
+    <button id="simple">Show Simple Box</button>
+    <button id="custom">Show Custom Box</button>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi earum error praesentium explicabo ullam recusandae nulla tempora voluptatum odio id. Eos sed labore illo tempora quasi laborum nisi, eius voluptates.</p>
+
+    <script src="68.js"></script>
+    <script>
+        document.querySelector('#simple').addEventListener('click', () => {
+            pcsMessageBox('This is a simple message');
+        });
+
+        document.querySelector('#custom').addEventListener('click', () => {
+            pcsMessageBox(
+                'Is this enough homework?',
+                ['Yes', 'No', 'Maybe'],
+                choice => console.log('You picked ' + choice),
+                true 
+            );
+        });
+        
+    </script>
+    <script>
+        pcsMessageBox('This is a simple message');
+    </script>
+</body>
+
+</html>
