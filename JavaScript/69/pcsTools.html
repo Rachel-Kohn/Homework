@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pcsTools Test</title>
+    <style>
+        h1 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="potus">Donald Trump</h1>
+    <h1 id="charlie">Charlie Kirk</h1>
+    <button id="hideBtn">Hide POTUS</button>
+    <button id="showBtn">Show POTUS</button>
+    <button id="sparkleBtn">Sparkle POTUS</button>
+    <button id="hideCharlie">Hide Charlie</button>
+    <button id="showCharlie">Show Charlie</button>
+    <button id="sparkleCharlie">Sparkle Charlie</button>
+
+    <script src="pcsTools.js"></script>
+    <script>
+        const potus = pcs('#potus');
+        potus.css('color', 'red');
+        potus.css('position', 'absolute');
+        potus.css('bottom', '100px');
+        potus.click(() => console.log('potus clicked'));
+
+        pcs('#hideBtn').click(() => potus.hide());
+        pcs('#showBtn').click(() => potus.show());
+        pcs('#sparkleBtn').click(() => potus.sparkle(3000, 300));
+
+        const charlie = pcs('#charlie');
+        pcs('#hideCharlie').click(() => charlie.hide());
+        pcs('#showCharlie').click(() => charlie.show());
+        pcs('#sparkleCharlie').click(() => charlie.sparkle(3000, 300));
+    </script>
+</body>
+
+</html>
