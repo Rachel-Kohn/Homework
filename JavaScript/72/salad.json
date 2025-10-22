@@ -1,0 +1,19 @@
+{
+    "name": "Caesar Salad",
+    "ingredients": [
+        "1 head of romaine lettuce, chopped",
+        "¼ cup parmesan cheese, shaved",
+        "¼ teaspoon black pepper",
+        "1 clove minced garlic",
+        "½ lemon, juiced",
+        "¾ teaspoon mustard",
+        "¼ cup mayo",
+        "¾ teaspoon worcestershire sauce",
+        "½ teaspoon black pepper",
+        "½ cup olive oil",
+        "¼ cup parmesan cheese, grated",
+        "3 slices bread"
+    ],
+    "directions": "To make the croutons: Cut bread into 1-inch cubes. Arrange on a baking sheet and bake at 375°F for about 15 minutes or until golden. Remove and let cool. To make the dressing: Place all dressing ingredients in a blender or food processor and blend over low speed or pulse until smooth. In a large bowl, add chopped romaine lettuce and drizzle in a few tablespoons of Caesar dressing. Toss to coat lettuce. Sprinkle top with croutons, shaved parmesan, and cracked black pepper. Drizzle top with more dressing and enjoy!",
+    "image": "images/salad.jpg"
+}
