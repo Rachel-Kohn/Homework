@@ -1,0 +1,120 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+.sidebar {
+    border-right: 2px solid red;
+    padding: 1em;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.sidebar .search-container {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.sidebar input#search,
+.sidebar input#searchBox {
+    flex: 1;
+    height: 2.2em;
+    font-size: 1rem;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
+
+.sidebar button#go,
+.sidebar button#searchBtn {
+    height: 2.2em;
+    padding: 0 0.5em;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid red;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    border: 1px solid red;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    background: #111;
+    transition: border-color 0.3s ease;
+}
+
+.sidebar li:hover {
+    border-color: white;
+}
+
+.sidebar li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar span {
+    flex: 1;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.sidebar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.sidebar .summary {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    text-align: left;
+    padding: 0 0.5em;
+}
+
+.sidebar .active .summary {
+    height: 6em;
+}
+
+.visited {
+    color: darkgray;
+}
+
+.sidebar .active {
+    border-color: white;
+}
+
+.place-picture {
+    width: 75px;
+}
