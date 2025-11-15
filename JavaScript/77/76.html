@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 76/77</title>
+    <link rel="stylesheet" href="77.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mr. Potato Head</h1>
+    </header>
+
+    <main>
+        <aside class="sidebar left-sidebar">
+            <h2>Potato Gear</h2>
+            <div class="pieces">
+                <img src="images/cap.png" alt="Cap" draggable="true" class="piece">
+                <img src="images/blackHat.png" alt="Hat" draggable="true" class="piece">
+                <img src="images/eyes.png" alt="Eyes" draggable="true" class="piece">
+                <img src="images/glasses.png" alt="Glasses" draggable="true" class="piece">
+                <img src="images/nose.png" alt="Nose" draggable="true" class="piece">
+                <img src="images/mustacheNose.png" alt="Mustache Nose" draggable="true" class="piece">
+                <img src="images/mouth.png" alt="Mouth" draggable="true" class="piece">
+                <img src="images/teeth.png" alt="Teeth" draggable="true" class="piece">
+                <img src="images/leftEar.png" alt="Left Ear" draggable="true" class="piece">
+                <img src="images/rightEar.png" alt="Right Ear" draggable="true" class="piece">
+                <img src="images/leftHand.png" alt="Left Hand" draggable="true" class="piece">
+                <img src="images/rightHand.png" alt="Right Hand" draggable="true" class="piece">
+                <img src="images/bowTie.png" alt="Bow Tie" draggable="true" class="piece">
+                <img src="images/shoes.png" alt="Shoes" draggable="true" class="piece">
+            </div>
+            <h2>Double click to delete</h2>
+            <div class="sidebar-button-container">
+                <button id="add-body-btn">Add Potato</button>
+            </div>
+        </aside>
+
+        <section class="play-area">
+            <div id="potato-area"></div>
+        </section>
+
+        <aside class="sidebar right-sidebar">
+            <div class="fun-facts">
+                <h2>Fun Facts!</h2>
+                <ul>
+                    
+                    <li>Mr. Potato Head celebrates his birthday in 1952, the year he went on sale!</li>
+                    <li>He started out as just face parts you could stick on a real potato.</li>
+                    <li>People have made giant versions of him for fun displays.</li>
+                    <li>Over 60 million Mr. Potato Head toys have been sold worldwide.</li>
+                    <li>You can mix and match pieces to make silly faces.</li>
+                    
+                </ul>
+            </div>
+            <div class="sidebar-button-container right-buttons">
+                <button id="clear-btn">Clear</button>
+                <button id="mute-btn">Mute</button>
+            </div>
+        </aside>
+    </main>
+
+    <audio id="background-music" src="sound/Sonatina No. 1 in C Major - III. Vivace.mp3" loop autoplay></audio>
+
+    <script src="77.js"></script>
+</body>
+
+</html>
