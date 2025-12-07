@@ -1,11 +1,14 @@
-export function getIngredients(recipe) {
-    if (recipe === 'pasta') return ['noodles', 'tomato sauce', 'cheese'];
-    if (recipe === 'salad') return ['lettuce', 'tomato', 'cucumber'];
-    return [];
-}
+import './style.css';
+import dayjs from 'dayjs';
+import { getIngredients, kitchenTools, cook } from './HW83.js';
 
-export const kitchenTools = ['pan', 'knife', 'spoon'];
+const output = document.getElementById('recipe-output');
 
-export function cook(recipe) {
-    return `Cooking ${recipe} with ${getIngredients(recipe).join(', ')}`;
-}
+output.innerHTML = `
+  <p>Ingredients for pasta: ${getIngredients('pasta').join(', ')}</p>
+  <p>Tools needed: ${kitchenTools.join(', ')}</p>
+  <p>${cook('pasta')}</p>
+  <p>Current time: ${dayjs().format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
+`;
+
+console.log('dayjs test:', dayjs().format('YYYY-MM-DD HH:mm:ss'));
