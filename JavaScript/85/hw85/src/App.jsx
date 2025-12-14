@@ -10,7 +10,7 @@ class App extends Component {
 
   componentDidMount() {
     const zipCode = "90210";
-    const key = "b72b7148f667b3efb3b6584dd51a8ded";
+    const key = "my key";
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${key}&units=imperial&lang=en`)
       .then(res => res.json())
