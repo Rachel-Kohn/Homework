@@ -1,0 +1,12 @@
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.address {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
