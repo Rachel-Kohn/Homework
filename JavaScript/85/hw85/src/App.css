@@ -1,0 +1,12 @@
+.error {
+  color: red;
+}
+
+.weather-card {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
