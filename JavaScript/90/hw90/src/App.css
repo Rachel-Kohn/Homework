@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.site-header {
+  text-align: center;
+  padding: 40px 16px 24px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1f3a5f;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1f3a5f;
+  font-weight: 500;
+  margin: 0 14px;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #0a7cff;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 2.6rem;
+  color: #1f3a5f;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  margin-top: 16px;
+  text-align: center;
+}
+
+main p a {
+  color: #0a7cff;
+  text-decoration: underline;
+}
+
+main p a:hover {
+  opacity: 0.85;
+}
+
+main p {
+  border-left: 4px solid #0a7cff;
+  padding-left: 12px;
+}
