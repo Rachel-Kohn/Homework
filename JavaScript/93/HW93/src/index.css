@@ -1,0 +1,145 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #8b0000;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  margin: 0.5rem 0 0 0;
+}
+
+.home-link {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 0.9rem;
+  color: #8b0000;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.user-preview {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #8b0000;
+  border-radius: 6px;
+}
+
+.user-preview h3 {
+  margin: 0 0 0.3rem 0;
+}
+
+.user-preview p {
+  margin: 0.2rem 0;
+}
+
+.user-preview a {
+  color: #8b0000;
+  text-decoration: none;
+}
+
+.user-preview a:hover {
+  text-decoration: underline;
+}
+
+.user-header {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-left: 4px solid #8b0000;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.user-header h1 {
+  margin: 0 0 0.3rem 0;
+}
+
+.user-header p {
+  margin: 0.2rem 0;
+}
+
+.post-card {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #8b0000;
+  border-radius: 6px;
+}
+
+.post-card h3 {
+  color: #ff4d4d;
+  margin: 0;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  border: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+button[data-like] {
+  background-color: #8b0000;
+  color: #ffffff;
+}
+
+button[data-post] {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+.comments {
+  margin-top: 0.8rem;
+  border-top: 1px solid #444;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pagination button {
+  background-color: #8b0000;
+  color: #fff;
+}
