@@ -1,0 +1,43 @@
+<div class="top-bar">
+    <a href="/addContact" class="btn primary">Add Contact</a>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {{#noContacts}}
+        <tr>
+            <td colspan="5" style="text-align:center; padding:20px;">
+                No contacts loaded
+            </td>
+        </tr>
+        {{/noContacts}}
+
+        {{#contacts}}
+        <tr>
+            <td>{{first}}</td>
+            <td>{{last}}</td>
+            <td>{{email}}</td>
+            <td>{{phone}}</td>
+            <td>
+                <a href="/editContact/{{id}}" class="btn edit">Edit</a>
+
+                <form method="post" action="/deleteContact/{{id}}">
+                    <button type="submit" class="btn delete">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {{/contacts}}
+
+    </tbody>
+</table>

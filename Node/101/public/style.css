@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.top-bar {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+    /* FIXES LEFT ALIGN */
+    box-sizing: border-box;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* CREATES SPACE BETWEEN BUTTONS */
+}
+
+.btn.primary {
+    background-color: #0077cc;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #005fa3;
+}
+
+
+.btn.edit:hover {
+    background-color: #218838;
+}
+
+
+
+.btn.delete:hover {
+    background-color: #a80000;
+}
+
+table form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    width: 400px;
+    margin: 20px auto;
+    text-align: left;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 3px rgba(0, 119, 204, 0.4);
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn.cancel {
+    background-color: #777;
+    color: white;
+}
+
+.btn.cancel:hover {
+    background-color: #555;
+}
