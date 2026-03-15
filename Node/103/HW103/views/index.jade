@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Cookie Tracker
+  body
+    h1  🍪 Cookie Tracker 🍪
+    if !locals.username
+      form(method='POST', action='/username')
+        label Enter your username:
+        input(type='text', name='username')
+        button(type='submit') Save
+    else
+      p Welcome #{locals.username}!
+      p Your Cookie Jar: #{cookieJar} 
+      p Total visits: #{visits}
