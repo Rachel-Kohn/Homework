@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Target Tracker
+  body
+    h1 🎯 Target Tracker 🎯
+
+    if !locals.username
+      form(method='POST', action='/username')
+        label Enter your username:
+        input(type='text', name='username')
+        button(type='submit') Save
+    else
+      p Welcome #{locals.username}!
+      p Another visit, another bullseye 🎯
+      p Your Targets: #{targets}
+      p Total visits: #{visits}

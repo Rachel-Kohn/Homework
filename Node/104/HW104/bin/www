@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const app = require('../app');
+const http = require('http');
+
+const port = process.env.PORT || 3000;
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port, () => console.log(`Server running at http://localhost:${port}/`));
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error('Port in use');
+  } else if (err.code === 'EACCES') {
+    console.error('Requires elevated privileges');
+  } else {
+    throw err;
+  }
+});
