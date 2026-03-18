@@ -14,7 +14,7 @@ io.on('connection', socket => {
     console.log('got a connection');
 
     socket.on('join', username => {
-        socket.username = username; // 👈 store username on this socket
+        socket.username = username;
 
         io.emit('msg', {
             user: 'System',
