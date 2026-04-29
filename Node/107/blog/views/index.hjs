@@ -1,0 +1,9 @@
+{{#posts}}
+<div class="post">
+  <h2>{{title}}</h2>
+  <div class="meta">
+    by {{author}} on {{date}}
+  </div>
+  <p>{{body}}</p>
+</div>
+{{/posts}}
