@@ -1,0 +1,11 @@
+{{#posts}}
+<div class='post'>
+  <h2>{{title}}</h2>
+
+  <div>
+    by {{author}} on {{date}}
+  </div>
+
+  <p>{{body}}</p>
+</div>
+{{/posts}}

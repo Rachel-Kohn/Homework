@@ -1,0 +1,16 @@
+<h2>Create Account</h2>
+
+<form method="POST" action="/register" class="form">
+    <label>Username</label>
+    <input name="username" placeholder="Choose a username" required>
+
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Choose a password" required>
+
+    <button type="submit">Register</button>
+</form>
+
+<p>
+    Already have an account?
+    <a href="/login">Login here</a>
+</p>
