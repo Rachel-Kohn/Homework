@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fb;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+}
+
+.post {
+    background: white;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.post h2 {
+    margin-bottom: 5px;
+}
+
+.post p {
+    color: #444;
+}
+
+.comment {
+    background: #f1f3f7;
+    padding: 10px 14px;
+    margin-top: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #888;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #333;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+}
+.post-form {
+    max-width: 650px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.post-form input {
+    flex: 1;
+}
+
+.post-form button {
+    background: #111;
+}
+button {
+    margin-top: 8px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
