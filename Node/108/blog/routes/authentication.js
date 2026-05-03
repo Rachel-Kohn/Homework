@@ -12,7 +12,6 @@ router.use((req, res, next) => {
     }
 });
 
-// REGISTER
 router.post('/register', async (req, res, next) => {
     try {
         const hash = await bcrypt.hash(req.body.password, 10);
@@ -28,7 +27,6 @@ router.post('/register', async (req, res, next) => {
     }
 });
 
-// LOGIN
 router.post('/login', async (req, res, next) => {
     try {
         const user = await req.users.findOne({
@@ -53,7 +51,6 @@ router.post('/login', async (req, res, next) => {
     }
 });
 
-// LOGOUT
 router.get('/logout', (req, res) => {
     req.session.destroy();
     res.sendStatus(200);
