@@ -11,7 +11,6 @@ router.use((req, res, next) => {
     }
 });
 
-// GET all posts
 router.get('/', async (req, res, next) => {
     try {
         const posts = await req.posts.find().toArray();
@@ -21,7 +20,6 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-// ADD post (PROTECTED)
 router.post('/', async (req, res, next) => {
     try {
         // 🚨 MUST be logged in
